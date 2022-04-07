@@ -6,7 +6,18 @@
     <description>Recent content in Posts on Kieran Strawmier Code Work</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 01 Dec 2020 21:13:14 -0500</lastBuildDate><atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 06 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>on september 3, 2019 the mets lost all playoff hopes.</title>
+      <link>/2022/04/06/did-the-mets-flush-their-playoff-chances-in-2019/</link>
+      <pubDate>Wed, 06 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/2022/04/06/did-the-mets-flush-their-playoff-chances-in-2019/</guid>
+      <description>full gamee view for correct size reference before I zoom into the ninth.
+I want to add more % on the y axis to see the change. Cabera and Zimmerman mess with my sizing.
+plot_grid(bar1,bar2, ncol=1) leaguepitch &amp;lt;- bref_daily_pitcher(&amp;quot;2019-03-20&amp;quot;, &amp;quot;2019-10-30&amp;quot;) %&amp;gt;% filter(IP &amp;gt;=50) metspitchingstaff &amp;lt;- c(&amp;quot;Luis Avilan&amp;quot;,&amp;quot;Tyler Bashlor&amp;quot;,&amp;quot;Brad Brach&amp;quot;,&amp;quot;Jacob deGrom&amp;quot;,&amp;quot;Edwin Diaz&amp;quot;,&amp;quot;Jeurys Familia&amp;quot;,&amp;quot;Chris Flexen&amp;quot;,&amp;quot;Wilmer Font&amp;quot;,&amp;quot;Drew Gagnon&amp;quot;,&amp;quot;Robert Gsellman&amp;quot;,&amp;quot;Donnie Hart&amp;quot;,&amp;quot;Walker Lockett&amp;quot;,&amp;quot;Seth Lugo&amp;quot;,&amp;quot;Steven Matz&amp;quot;,&amp;quot;Chris Mazza&amp;quot;,&amp;quot;Stephen Nogosek&amp;quot;,&amp;quot;Ryan O&amp;#39;Rourke&amp;quot;,&amp;quot;Corey Oswalt&amp;quot;,&amp;quot;Tim Peterson&amp;quot;,&amp;quot;Brooks Pounders&amp;quot;,&amp;quot;Jacob Rhame&amp;quot;,&amp;quot;Hector Santiago&amp;quot;,&amp;quot;Paul Sewald&amp;quot;,&amp;quot;Marcus Stroman&amp;quot;,&amp;quot;Noah Syndergaard&amp;quot;,&amp;quot;Jason Vargas&amp;quot;,&amp;quot;Zack Wheeler&amp;quot;,&amp;quot;Justin Wilson&amp;quot;,&amp;quot;Daniel Zamora&amp;quot;) metspitch &amp;lt;- bref_daily_pitcher(&amp;quot;2019-03-20&amp;quot;, &amp;quot;2019-10-30&amp;quot;) %&amp;gt;% filter(Name %in% metspitchingstaff) jv &amp;lt;- leaguepitch %&amp;gt;% filter(Name == &amp;quot;Justin Verlander&amp;quot;) jh &amp;lt;- leaguepitch %&amp;gt;% filter(Name == &amp;quot;Josh Hader&amp;quot;) Luis Avilán only pitched 32 innings and for 1 batting in this inning so he wont be shown</description>
+    </item>
+    
     <item>
       <title>Hello R Markdown</title>
       <link>/2020/12/01/hello-r-markdown/</link>

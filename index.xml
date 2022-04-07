@@ -5,7 +5,40 @@
     <link>/</link>
     <description>Recent content on Kieran Strawmier Code Work</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Wed, 06 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>on september 3, 2019 the mets lost all playoff hopes.</title>
+      <link>/2022/04/06/did-the-mets-flush-their-playoff-chances-in-2019/</link>
+      <pubDate>Wed, 06 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/2022/04/06/did-the-mets-flush-their-playoff-chances-in-2019/</guid>
+      <description>full gamee view for correct size reference before I zoom into the ninth.
+I want to add more % on the y axis to see the change. Cabera and Zimmerman mess with my sizing.
+plot_grid(bar1,bar2, ncol=1) leaguepitch &amp;lt;- bref_daily_pitcher(&amp;quot;2019-03-20&amp;quot;, &amp;quot;2019-10-30&amp;quot;) %&amp;gt;% filter(IP &amp;gt;=50) metspitchingstaff &amp;lt;- c(&amp;quot;Luis Avilan&amp;quot;,&amp;quot;Tyler Bashlor&amp;quot;,&amp;quot;Brad Brach&amp;quot;,&amp;quot;Jacob deGrom&amp;quot;,&amp;quot;Edwin Diaz&amp;quot;,&amp;quot;Jeurys Familia&amp;quot;,&amp;quot;Chris Flexen&amp;quot;,&amp;quot;Wilmer Font&amp;quot;,&amp;quot;Drew Gagnon&amp;quot;,&amp;quot;Robert Gsellman&amp;quot;,&amp;quot;Donnie Hart&amp;quot;,&amp;quot;Walker Lockett&amp;quot;,&amp;quot;Seth Lugo&amp;quot;,&amp;quot;Steven Matz&amp;quot;,&amp;quot;Chris Mazza&amp;quot;,&amp;quot;Stephen Nogosek&amp;quot;,&amp;quot;Ryan O&amp;#39;Rourke&amp;quot;,&amp;quot;Corey Oswalt&amp;quot;,&amp;quot;Tim Peterson&amp;quot;,&amp;quot;Brooks Pounders&amp;quot;,&amp;quot;Jacob Rhame&amp;quot;,&amp;quot;Hector Santiago&amp;quot;,&amp;quot;Paul Sewald&amp;quot;,&amp;quot;Marcus Stroman&amp;quot;,&amp;quot;Noah Syndergaard&amp;quot;,&amp;quot;Jason Vargas&amp;quot;,&amp;quot;Zack Wheeler&amp;quot;,&amp;quot;Justin Wilson&amp;quot;,&amp;quot;Daniel Zamora&amp;quot;) metspitch &amp;lt;- bref_daily_pitcher(&amp;quot;2019-03-20&amp;quot;, &amp;quot;2019-10-30&amp;quot;) %&amp;gt;% filter(Name %in% metspitchingstaff) jv &amp;lt;- leaguepitch %&amp;gt;% filter(Name == &amp;quot;Justin Verlander&amp;quot;) jh &amp;lt;- leaguepitch %&amp;gt;% filter(Name == &amp;quot;Josh Hader&amp;quot;) Luis Avilán only pitched 32 innings and for 1 batting in this inning so he wont be shown</description>
+    </item>
+    
+    <item>
+      <title>Hello R Markdown</title>
+      <link>/2020/12/01/hello-r-markdown/</link>
+      <pubDate>Tue, 01 Dec 2020 21:13:14 -0500</pubDate>
+      
+      <guid>/2020/12/01/hello-r-markdown/</guid>
+      <description>R Markdown This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
+You can embed an R code chunk like this:
+summary(cars) ## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 26.00 ## Median :15.0 Median : 36.00 ## Mean :15.4 Mean : 42.98 ## 3rd Qu.</description>
+    </item>
+    
+    <item>
+      <title>A Plain Markdown Post</title>
+      <link>/2016/12/30/a-plain-markdown-post/</link>
+      <pubDate>Fri, 30 Dec 2016 21:49:57 -0700</pubDate>
+      
+      <guid>/2016/12/30/a-plain-markdown-post/</guid>
+      <description>This is a post written in plain Markdown (*.md) instead of R Markdown (*.Rmd). The major differences are:
+ You cannot run any R code in a plain Markdown document, whereas in an R Markdown document, you can embed R code chunks (```{r}); A plain Markdown post is rendered through Blackfriday, and an R Markdown document is compiled by rmarkdown and Pandoc.  There are many differences in syntax between Blackfriday&amp;rsquo;s Markdown and Pandoc&amp;rsquo;s Markdown.</description>
+    </item>
+    
     <item>
       <title>About Kieran Strawmier</title>
       <link>/about/</link>
@@ -13,6 +46,15 @@
       
       <guid>/about/</guid>
       <description>My Name is Kieran Strawmier. I am a sophomore at the University of Nebraska-Lincoln double majoring in sports media and mass communication &amp;amp; advertising and public relations. My career interests are in the advertising/public relations field. I am looking to build experience with these skills in the sports industry. As a result of the course, (SPMC350), that required me to make this website, I am now looking to improve on my sports data analysis to potentially pursue a career in that industry.</description>
+    </item>
+    
+    <item>
+      <title>Lorem Ipsum</title>
+      <link>/2015/01/01/lorem-ipsum/</link>
+      <pubDate>Thu, 01 Jan 2015 13:09:13 -0600</pubDate>
+      
+      <guid>/2015/01/01/lorem-ipsum/</guid>
+      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</description>
     </item>
     
   </channel>
