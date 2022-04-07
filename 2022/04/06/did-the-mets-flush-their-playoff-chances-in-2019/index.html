@@ -86,7 +86,7 @@ metspitch &lt;- bref_daily_pitcher(&quot;2019-03-20&quot;, &quot;2019-10-30&quot
 jv &lt;- leaguepitch %&gt;% filter(Name == &quot;Justin Verlander&quot;)
 jh &lt;- leaguepitch %&gt;% filter(Name == &quot;Josh Hader&quot;)</code></pre>
 <p>Luis Avilán only pitched 32 innings and for 1 batting in this inning so he wont be shown</p>
-<pre class="r"><code>scatter1 &lt;- ggplot() +
+<pre class="r"><code>ggplot() +
     geom_point(data=leaguepitch, aes(x=ERA, y=WHIP), color=&quot;grey&quot;) +
     geom_point(data=metspitch, aes(x=ERA, y=WHIP), color=&quot;orange&quot;) +
     geom_point(data=jh, aes(x=ERA, y=WHIP), color=&quot;Blue&quot;) +
@@ -109,7 +109,9 @@ jh &lt;- leaguepitch %&gt;% filter(Name == &quot;Josh Hader&quot;)</code></pre>
     caption = &quot;Source: baseball Reference | By: Kieran Strawmier&quot;
   ) +
   theme(plot.title.position = &quot;plot&quot;, plot.title = element_text(size = 18, face= &quot;bold&quot;))</code></pre>
-<p>I am not putting Cody Bellinger as a refernece bc he is currently a fraud</p>
+<p><img src="/2022/04/06/did-the-mets-flush-their-playoff-chances-in-2019/index_files/figure-html/unnamed-chunk-16-1.png" width="672" /></p>
+<p>I am not putting Cody Bellinger as a refernece bc he is currently a fraud
+<img src="/2022/04/06/did-the-mets-flush-their-playoff-chances-in-2019/index_files/figure-html/unnamed-chunk-18-1.png" width="672" /></p>
 
     </div>
   </article>
