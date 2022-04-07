@@ -22,11 +22,6 @@
 
 
 
-
-<link href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css' rel='stylesheet' type='text/css' />
-
-
-
 <link rel="stylesheet" href="/css/fonts.css" media="all">
 <link rel="stylesheet" href="/css/main.css" media="all">
 
@@ -62,7 +57,7 @@
 
   <article class="article">
     
-    <span class="article-duration">2 min read</span>
+    <span class="article-duration">1 min read</span>
     
 
     <h1 class="article-title">on september 3, 2019 the mets lost all playoff hopes.</h1>
@@ -75,41 +70,10 @@
       
 
 
-<p>full gamee view for correct size reference before I zoom into the ninth.</p>
-<p>I want to add more % on the y axis to see the change. Cabera and Zimmerman mess with my sizing.</p>
-<pre class="r"><code>plot_grid(bar1,bar2, ncol=1)</code></pre>
 <p><img src="/2022/04/06/did-the-mets-flush-their-playoff-chances-in-2019/index_files/figure-html/unnamed-chunk-12-1.png" width="672" /></p>
 <p><img src="/2022/04/06/did-the-mets-flush-their-playoff-chances-in-2019/index_files/figure-html/unnamed-chunk-14-1.png" width="672" /></p>
-<pre class="r"><code>leaguepitch &lt;- bref_daily_pitcher(&quot;2019-03-20&quot;, &quot;2019-10-30&quot;) %&gt;% filter(IP &gt;=50)
-metspitchingstaff &lt;- c(&quot;Luis Avilan&quot;,&quot;Tyler Bashlor&quot;,&quot;Brad Brach&quot;,&quot;Jacob deGrom&quot;,&quot;Edwin Diaz&quot;,&quot;Jeurys Familia&quot;,&quot;Chris Flexen&quot;,&quot;Wilmer Font&quot;,&quot;Drew Gagnon&quot;,&quot;Robert Gsellman&quot;,&quot;Donnie Hart&quot;,&quot;Walker Lockett&quot;,&quot;Seth Lugo&quot;,&quot;Steven Matz&quot;,&quot;Chris Mazza&quot;,&quot;Stephen Nogosek&quot;,&quot;Ryan O&#39;Rourke&quot;,&quot;Corey Oswalt&quot;,&quot;Tim Peterson&quot;,&quot;Brooks Pounders&quot;,&quot;Jacob Rhame&quot;,&quot;Hector Santiago&quot;,&quot;Paul Sewald&quot;,&quot;Marcus Stroman&quot;,&quot;Noah Syndergaard&quot;,&quot;Jason Vargas&quot;,&quot;Zack Wheeler&quot;,&quot;Justin Wilson&quot;,&quot;Daniel Zamora&quot;)
-metspitch &lt;- bref_daily_pitcher(&quot;2019-03-20&quot;, &quot;2019-10-30&quot;) %&gt;% filter(Name %in% metspitchingstaff)
-jv &lt;- leaguepitch %&gt;% filter(Name == &quot;Justin Verlander&quot;)
-jh &lt;- leaguepitch %&gt;% filter(Name == &quot;Josh Hader&quot;)</code></pre>
-<p>Luis Avilán only pitched 32 innings and for 1 batting in this inning so he wont be shown</p>
-<pre class="r"><code>ggplot() +
-    geom_point(data=leaguepitch, aes(x=ERA, y=WHIP), color=&quot;grey&quot;) +
-    geom_point(data=metspitch, aes(x=ERA, y=WHIP), color=&quot;orange&quot;) +
-    geom_point(data=jh, aes(x=ERA, y=WHIP), color=&quot;Blue&quot;) +
-      geom_hline(yintercept = 1.296188) +
-      geom_vline(xintercept = 4.298944) +
-    annotate(&quot;text&quot;, x=1.8, y=.7, label=&quot;Good R allowed/Good H-W allowed&quot;, color=&quot;Purple&quot;) +
-    annotate(&quot;text&quot;, x=1.8, y=2.35, label=&quot;Good R allowed/Bad H-W allowed&quot;, color=&quot;Purple&quot;) +
-    annotate(&quot;text&quot;, x=8, y=2.35, label=&quot;Bad R allowed/Bad H-W allowed&quot;, color=&quot;Purple&quot;) +
-    annotate(&quot;text&quot;, x=8, y=.7, label=&quot;Bad R allowed/Good H-W allowed&quot;, color=&quot;Purple&quot;) +
-  annotate(&quot;text&quot;, x=5.55,y= 1.068,label=&quot;Paul Sewald&quot;) +
-  annotate(&quot;text&quot;, x=6.55,y=1.379,label=&quot;Edwin Díaz&quot;) +
-  annotate(&quot;text&quot;, x=3.5,y=.971,label=&quot;Jacob deGrom&quot;) +
-  annotate(&quot;text&quot;, x=1.7,y=.806,label=&quot;Josh Hader&quot;) +
-   theme_minimal()+
-  labs(
-    x=&quot;Earned Run Average&quot;,
-    y=&quot;Walk and Hits per Innings Pitched &quot;, 
-    title = &quot;How good were bottom of the 9th Pitchers&quot;,
-    subtitle = &quot;The Mets 9th inning pitchers were underwhelming compared to the rest of the league.&quot;,
-    caption = &quot;Source: baseball Reference | By: Kieran Strawmier&quot;
-  ) +
-  theme(plot.title.position = &quot;plot&quot;, plot.title = element_text(size = 18, face= &quot;bold&quot;))</code></pre>
-<p><img src="/2022/04/06/did-the-mets-flush-their-playoff-chances-in-2019/index_files/figure-html/unnamed-chunk-16-1.png" width="672" /></p>
+<p>Luis Avilán only pitched 32 innings and for 1 batting in this inning so he wont be shown
+<img src="/2022/04/06/did-the-mets-flush-their-playoff-chances-in-2019/index_files/figure-html/unnamed-chunk-16-1.png" width="672" /></p>
 <p>I am not putting Cody Bellinger as a refernece bc he is currently a fraud
 <img src="/2022/04/06/did-the-mets-flush-their-playoff-chances-in-2019/index_files/figure-html/unnamed-chunk-18-1.png" width="672" /></p>
 
@@ -134,18 +98,6 @@ jh &lt;- leaguepitch %&gt;% filter(Name == &quot;Josh Hader&quot;)</code></pre>
 
     </div>
     
-
-
-
-<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-
-
-
-<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
-<script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
-
-
 
     
 
